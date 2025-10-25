@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: #00ffcc;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    #home {
+      background: linear-gradient(to right, #1a1a1a, #444);
+      color: white;
+      padding: 100px 20px;
+    }
+
+    #home h2 {
+      font-size: 2.5rem;
+    }
+
+    .project-card {
+      background-color: white;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 600px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #00cc99;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #009973;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Myself Gokulnath</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Hello, I'm a Python Developer</h2>
+    <p>Welcome to my portfolio website!</p>
+    <br>
+    <button onclick="document.getElementById('contact').scrollIntoView();">
+      Contact Me
+    </button>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a student passionate about web development, coding, and technology.</p>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <p>HTML, C++, Python</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-card">
+      <h3>Project 1: Portfolio Website</h3>
+      <p>A personal website to showcase my skills and projects.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Project 2: Simple Calculator</h3>
+      <p>A web-based calculator using HTML, CSS, and JavaScript.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: beinggokul27gmail.com</p>
+    <p>LinkedIn: linkedin.com/in/yourprofile</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Gokulnath | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
